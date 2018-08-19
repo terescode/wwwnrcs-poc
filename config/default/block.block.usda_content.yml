@@ -1,0 +1,22 @@
+uuid: e04679c8-6961-41c0-bd2a-703d19aec40e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - usda
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: usda_content
+theme: usda
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

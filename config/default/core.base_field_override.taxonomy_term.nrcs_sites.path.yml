@@ -1,0 +1,20 @@
+uuid: a2e82bb7-8127-4c58-94e6-ced1937beed1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_sites
+  module:
+    - path
+id: taxonomy_term.nrcs_sites.path
+field_name: path
+entity_type: taxonomy_term
+bundle: nrcs_sites
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

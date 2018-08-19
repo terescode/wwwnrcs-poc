@@ -1,0 +1,44 @@
+uuid: 7318afad-3e3c-4e37-8416-b119feeb0f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.webmaster_foo-group_membership.group_roles
+    - group.content_type.webmaster_foo-group_membership
+  module:
+    - path
+id: group_content.webmaster_foo-group_membership.default
+targetEntityType: group_content
+bundle: webmaster_foo-group_membership
+mode: default
+content:
+  entity_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  group_roles:
+    type: options_buttons
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

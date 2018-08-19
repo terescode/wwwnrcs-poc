@@ -1,0 +1,18 @@
+uuid: a6b82ef9-8cac-4c46-b3dd-7addc89d79f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_navigation
+id: taxonomy_term.nrcs_navigation.name
+field_name: name
+entity_type: taxonomy_term
+bundle: nrcs_navigation
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,7 +1,7 @@
 project:
   machine_name: wwwnrcs-poc
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: NRCSD8
+  human_name: 'NRCS on Drupal 8'
   profile:
     name: standard
   local:

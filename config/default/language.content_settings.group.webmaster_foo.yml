@@ -1,0 +1,18 @@
+uuid: 279e368a-6edd-40e7-a1e5-839be4424415
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.webmaster_foo
+target_entity_type_id: group
+target_bundle: webmaster_foo
+default_langcode: site_default
+language_alterable: false

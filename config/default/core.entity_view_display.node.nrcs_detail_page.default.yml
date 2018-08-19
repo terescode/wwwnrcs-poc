@@ -1,0 +1,94 @@
+uuid: a88ede87-8eed-4519-8fad-be0a6883a434
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nrcs_detail_page.field_nrcs_detail_components
+    - field.field.node.nrcs_detail_page.field_nrcs_page_banner_image
+    - field.field.node.nrcs_detail_page.field_nrcs_page_heading
+    - field.field.node.nrcs_detail_page.field_nrcs_page_metatags
+    - field.field.node.nrcs_detail_page.field_nrcs_page_path
+    - field.field.node.nrcs_detail_page.field_nrcs_page_site
+    - field.field.node.nrcs_detail_page.field_nrcs_page_title
+    - field.field.node.nrcs_detail_page.field_nrcs_page_url_component
+    - node.type.nrcs_detail_page
+  module:
+    - entity_reference_revisions
+    - image
+    - metatag
+    - user
+id: node.nrcs_detail_page.default
+targetEntityType: node
+bundle: nrcs_detail_page
+mode: default
+content:
+  field_nrcs_detail_components:
+    type: entity_reference_revisions_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nrcs_page_banner_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nrcs_page_heading:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nrcs_page_metatags:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_nrcs_page_path:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_nrcs_page_site:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_nrcs_page_title:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nrcs_page_url_component:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

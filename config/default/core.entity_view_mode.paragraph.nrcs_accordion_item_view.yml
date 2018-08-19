@@ -1,0 +1,10 @@
+uuid: 452ff21c-6aeb-48f9-a8bd-241c967d7966
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.nrcs_accordion_item_view
+label: 'Accordion Item'
+targetEntityType: paragraph
+cache: true

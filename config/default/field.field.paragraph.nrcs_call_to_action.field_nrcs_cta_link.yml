@@ -1,0 +1,23 @@
+uuid: 6451b45c-0e72-4f7b-8b53-096e1b880dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nrcs_cta_link
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - link
+id: paragraph.nrcs_call_to_action.field_nrcs_cta_link
+field_name: field_nrcs_cta_link
+entity_type: paragraph
+bundle: nrcs_call_to_action
+label: Link
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

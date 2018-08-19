@@ -1,0 +1,24 @@
+uuid: f1a2ef29-11e2-407e-9228-cc104f39eec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.webmaster_foo-group_membership.group_roles
+    - group.content_type.webmaster_foo-group_membership
+id: group_content.webmaster_foo-group_membership.default
+targetEntityType: group_content
+bundle: webmaster_foo-group_membership
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

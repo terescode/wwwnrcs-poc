@@ -1,0 +1,10 @@
+uuid: 95078f43-8be8-4d10-988f-4c27b1d53dd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.nrcs_promo_content_view
+label: 'Promoted Content'
+targetEntityType: paragraph
+cache: true

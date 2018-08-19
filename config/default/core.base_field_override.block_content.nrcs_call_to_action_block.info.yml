@@ -1,0 +1,18 @@
+uuid: e11f7c0a-6f3c-4af4-82c8-6f9d1aec17c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nrcs_call_to_action_block
+id: block_content.nrcs_call_to_action_block.info
+field_name: info
+entity_type: block_content
+bundle: nrcs_call_to_action_block
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

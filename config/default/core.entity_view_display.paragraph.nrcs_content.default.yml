@@ -1,0 +1,40 @@
+uuid: 5533de8c-0296-4489-ba26-514f3f681b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nrcs_content.field_nrcs_content_body
+    - field.field.paragraph.nrcs_content.field_nrcs_content_heading
+    - field.field.paragraph.nrcs_content.field_nrcs_content_subheading
+    - paragraphs.paragraphs_type.nrcs_content
+  module:
+    - text
+id: paragraph.nrcs_content.default
+targetEntityType: paragraph
+bundle: nrcs_content
+mode: default
+content:
+  field_nrcs_content_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_nrcs_content_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nrcs_content_subheading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

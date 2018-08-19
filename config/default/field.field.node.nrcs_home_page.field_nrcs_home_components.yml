@@ -1,0 +1,41 @@
+uuid: 2b749f7c-75b3-4c76-aab8-05f9df37bc2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_home_components
+    - node.type.nrcs_home_page
+    - paragraphs.paragraphs_type.nrcs_accordion
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+    - paragraphs.paragraphs_type.nrcs_content
+  module:
+    - entity_reference_revisions
+id: node.nrcs_home_page.field_nrcs_home_components
+field_name: field_nrcs_home_components
+entity_type: node
+bundle: nrcs_home_page
+label: 'Page Components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      nrcs_accordion: nrcs_accordion
+      nrcs_call_to_action: nrcs_call_to_action
+      nrcs_content: nrcs_content
+    target_bundles_drag_drop:
+      nrcs_accordion:
+        enabled: true
+        weight: 4
+      nrcs_call_to_action:
+        enabled: true
+        weight: 5
+      nrcs_content:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

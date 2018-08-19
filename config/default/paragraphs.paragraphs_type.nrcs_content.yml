@@ -1,0 +1,9 @@
+uuid: 19260a68-bf5b-4808-8a84-475c509ad67e
+langcode: en
+status: true
+dependencies: {  }
+id: nrcs_content
+label: 'NRCS Content'
+icon_uuid: null
+description: 'A template for creating rich text content blocks on a page.'
+behavior_plugins: {  }

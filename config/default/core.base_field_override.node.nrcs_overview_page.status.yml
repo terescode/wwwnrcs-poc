@@ -1,0 +1,22 @@
+uuid: 8a24e333-6180-4eef-b5e8-90fc8480b302
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nrcs_overview_page
+id: node.nrcs_overview_page.status
+field_name: status
+entity_type: node
+bundle: nrcs_overview_page
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

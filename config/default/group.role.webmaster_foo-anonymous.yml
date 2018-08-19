@@ -1,0 +1,14 @@
+uuid: 580d423f-930b-455b-9806-8ca4bb420321
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+id: webmaster_foo-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: webmaster_foo
+permissions_ui: true
+permissions: {  }

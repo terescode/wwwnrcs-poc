@@ -1,0 +1,35 @@
+uuid: f962994c-82ab-4782-9ec8-88efa8ae5603
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_detail_components
+    - node.type.nrcs_detail_page
+  module:
+    - entity_reference_revisions
+id: node.nrcs_detail_page.field_nrcs_detail_components
+field_name: field_nrcs_detail_components
+entity_type: node
+bundle: nrcs_detail_page
+label: 'Page Components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      accordion:
+        enabled: true
+        weight: 4
+      block:
+        enabled: true
+        weight: 5
+      content:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: 24d74851-5710-466a-a424-9654ebaff070
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - nrcs_core
+  theme:
+    - usda
+id: nrcspagebanner
+theme: usda
+region: content
+weight: -8
+provider: null
+plugin: nrcs_page_banner
+settings:
+  id: nrcs_page_banner
+  label: 'NRCS Page Banner'
+  provider: nrcs_core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      nrcs_detail_page: nrcs_detail_page
+      nrcs_overview_page: nrcs_overview_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

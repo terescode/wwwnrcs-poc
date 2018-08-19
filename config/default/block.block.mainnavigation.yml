@@ -1,0 +1,34 @@
+uuid: ece06cb1-7d85-4ad0-b4a8-9beede284826
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - node
+    - system
+  theme:
+    - usda
+id: mainnavigation
+theme: usda
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      nrcs_detail_page: nrcs_detail_page
+      nrcs_home_page: nrcs_home_page
+      nrcs_overview_page: nrcs_overview_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

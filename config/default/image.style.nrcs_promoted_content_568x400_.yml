@@ -1,0 +1,14 @@
+uuid: 0015aa36-6cfe-4880-a8c8-a1bf712e4a18
+langcode: en
+status: true
+dependencies: {  }
+name: nrcs_promoted_content_568x400_
+label: 'Promoted Content (568x400)'
+effects:
+  38684f86-25fa-44a8-9ae5-f06a252dc979:
+    uuid: 38684f86-25fa-44a8-9ae5-f06a252dc979
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 568
+      height: 400

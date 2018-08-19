@@ -1,0 +1,22 @@
+uuid: 58a78aeb-749a-4d4a-878e-5f6c4dfa8b44
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - usda
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: usda_search
+theme: usda
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

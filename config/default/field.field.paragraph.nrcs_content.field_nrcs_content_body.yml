@@ -1,0 +1,21 @@
+uuid: c092ef35-dad4-48a9-b13b-55d3f91e64dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nrcs_content_body
+    - paragraphs.paragraphs_type.nrcs_content
+  module:
+    - text
+id: paragraph.nrcs_content.field_nrcs_content_body
+field_name: field_nrcs_content_body
+entity_type: paragraph
+bundle: nrcs_content
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 3a9fa455-6003-4cff-ae12-a2982de124a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_page_title
+    - node.type.nrcs_home_page
+id: node.nrcs_home_page.field_nrcs_page_title
+field_name: field_nrcs_page_title
+entity_type: node
+bundle: nrcs_home_page
+label: 'Page Title'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: Home
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 416a1958-93d4-489a-9b7b-02a538b1b1c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_sites
+id: taxonomy_term.nrcs_sites.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: nrcs_sites
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

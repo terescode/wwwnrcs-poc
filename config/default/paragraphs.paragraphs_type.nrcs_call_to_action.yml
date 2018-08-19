@@ -1,0 +1,9 @@
+uuid: 26e0a6f2-5c9d-4533-8d6e-7a768fe9e93e
+langcode: en
+status: true
+dependencies: {  }
+id: nrcs_call_to_action
+label: 'NRCS Call-to-action'
+icon_uuid: null
+description: 'A template for creating call-to-action blocks on a page.'
+behavior_plugins: {  }

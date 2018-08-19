@@ -1,0 +1,14 @@
+base:
+  version: 1.0.0
+  css:
+    theme:
+      css/styles.css: {}
+      css/print.css: {}
+      css/nrcs.css: {}
+  js:
+    js/usda.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.debounce

@@ -1,0 +1,22 @@
+uuid: d019f1f8-605e-427a-9403-7bc16d34a3c6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - usda
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: usda_local_tasks
+theme: usda
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

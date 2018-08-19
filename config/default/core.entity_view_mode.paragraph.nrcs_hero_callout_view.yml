@@ -1,0 +1,10 @@
+uuid: a97b2424-7a90-41c3-a5e7-ad0ba205aa6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.nrcs_hero_callout_view
+label: 'Hero Callout'
+targetEntityType: paragraph
+cache: true

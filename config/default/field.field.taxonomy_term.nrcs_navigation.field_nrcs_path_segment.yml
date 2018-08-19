@@ -1,0 +1,19 @@
+uuid: 95f1899f-31bb-4a54-bcf1-94962e4fe24a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nrcs_path_segment
+    - taxonomy.vocabulary.nrcs_navigation
+id: taxonomy_term.nrcs_navigation.field_nrcs_path_segment
+field_name: field_nrcs_path_segment
+entity_type: taxonomy_term
+bundle: nrcs_navigation
+label: 'Path Segment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

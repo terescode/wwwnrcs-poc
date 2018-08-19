@@ -1,0 +1,19 @@
+uuid: 72657137-fc82-43ef-a642-f89c59d59e69
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_nrcs_cta_block_link
+field_name: field_nrcs_cta_block_link
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

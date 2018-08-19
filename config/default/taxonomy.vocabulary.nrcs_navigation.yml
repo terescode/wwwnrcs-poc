@@ -1,0 +1,9 @@
+uuid: b472eb1c-af92-43bf-8324-4367e5e852e4
+langcode: en
+status: true
+dependencies: {  }
+name: 'NRCS Navigation'
+vid: nrcs_navigation
+description: 'Navigation taxonomy for NRCS sites'
+hierarchy: 1
+weight: 0

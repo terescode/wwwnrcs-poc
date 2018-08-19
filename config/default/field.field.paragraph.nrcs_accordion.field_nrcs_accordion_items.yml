@@ -1,0 +1,37 @@
+uuid: 3140ffab-ecc7-4c06-804d-ac8b02e4386b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nrcs_accordion_items
+    - paragraphs.paragraphs_type.nrcs_accordion
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - entity_reference_revisions
+id: paragraph.nrcs_accordion.field_nrcs_accordion_items
+field_name: field_nrcs_accordion_items
+entity_type: paragraph
+bundle: nrcs_accordion
+label: Items
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      nrcs_call_to_action: nrcs_call_to_action
+    target_bundles_drag_drop:
+      nrcs_accordion:
+        weight: 4
+        enabled: false
+      nrcs_call_to_action:
+        enabled: true
+        weight: 5
+      nrcs_content:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

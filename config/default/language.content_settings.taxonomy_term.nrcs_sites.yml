@@ -1,0 +1,18 @@
+uuid: 495aa7f0-e1e5-49fe-9448-3da06e7bcacc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_sites
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.nrcs_sites
+target_entity_type_id: taxonomy_term
+target_bundle: nrcs_sites
+default_langcode: site_default
+language_alterable: false

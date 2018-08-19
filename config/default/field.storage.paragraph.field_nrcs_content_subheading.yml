@@ -1,0 +1,21 @@
+uuid: ef4ac499-5962-43c3-9090-eb57ea137b80
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_nrcs_content_subheading
+field_name: field_nrcs_content_subheading
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

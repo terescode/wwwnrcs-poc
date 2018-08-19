@@ -1,0 +1,72 @@
+uuid: b8eb9255-9d28-4820-9b0b-9c77ef48a10d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nrcs_home_page.field_nrcs_home_components
+    - field.field.node.nrcs_home_page.field_nrcs_home_hero_callout
+    - field.field.node.nrcs_home_page.field_nrcs_home_promo_content
+    - field.field.node.nrcs_home_page.field_nrcs_page_metatags
+    - field.field.node.nrcs_home_page.field_nrcs_page_site
+    - field.field.node.nrcs_home_page.field_nrcs_page_title
+    - node.type.nrcs_home_page
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.nrcs_home_page.default
+targetEntityType: node
+bundle: nrcs_home_page
+mode: default
+content:
+  content_moderation_control:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nrcs_home_components:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nrcs_home_hero_callout:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: nrcs_hero_callout_view
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nrcs_home_promo_content:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: nrcs_promo_content_view
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nrcs_page_metatags:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_nrcs_page_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_nrcs_page_site: true
+  langcode: true
+  links: true

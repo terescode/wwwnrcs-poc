@@ -1,0 +1,5 @@
+name: NRCS Core
+type: module
+description: Provides core functionality for other NRCS custom modules.
+core: 8.x
+package: nrcs

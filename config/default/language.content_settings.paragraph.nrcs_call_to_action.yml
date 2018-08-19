@@ -1,0 +1,18 @@
+uuid: c5b8f2d3-3278-449e-867b-6aaea040f4f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.nrcs_call_to_action
+target_entity_type_id: paragraph
+target_bundle: nrcs_call_to_action
+default_langcode: site_default
+language_alterable: true

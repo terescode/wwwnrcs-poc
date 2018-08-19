@@ -1,0 +1,14 @@
+uuid: 51bab44c-bcc7-4ec0-81a7-2130ebad1e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+id: webmaster_foo-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: webmaster_foo
+permissions_ui: true
+permissions: {  }

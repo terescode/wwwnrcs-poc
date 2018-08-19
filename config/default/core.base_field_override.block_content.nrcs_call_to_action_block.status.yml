@@ -1,0 +1,22 @@
+uuid: 26f5bd25-f708-4b0a-b350-5d9f424fc3e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nrcs_call_to_action_block
+id: block_content.nrcs_call_to_action_block.status
+field_name: status
+entity_type: block_content
+bundle: nrcs_call_to_action_block
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

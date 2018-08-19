@@ -1,0 +1,18 @@
+uuid: 347559d7-f62d-4d9f-8a1e-fa6720d12394
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nrcs_home_page
+id: node.nrcs_home_page.metatag
+field_name: metatag
+entity_type: node
+bundle: nrcs_home_page
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

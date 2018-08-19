@@ -1,0 +1,17 @@
+name: usda
+type: theme
+base theme: classy
+description: 'USDA Drupal theme'
+version: 1.0.0
+core: 8.x
+libraries:
+  - usda/base
+regions:
+  header: Header
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  breadcrumb: Breadcrumb
+  help: Help
+  content: Content
+  footer_primary: 'Primary Footer'
+  footer_secondary: 'Secondary Footer'

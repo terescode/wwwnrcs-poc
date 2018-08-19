@@ -1,0 +1,15 @@
+uuid: 7d35d1b1-d597-4f19-b0a2-bbb5f76fb0d7
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'view own unpublished content'
+  - 'view the administration theme'

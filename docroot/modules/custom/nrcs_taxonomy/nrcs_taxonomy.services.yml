@@ -1,0 +1,4 @@
+services:
+  nrcs_taxonomy.taxonomy_path_token:
+    class: Drupal\nrcs_taxonomy\Token\TaxonomyPathToken
+    arguments: ['@nrcs_core.path_helper']

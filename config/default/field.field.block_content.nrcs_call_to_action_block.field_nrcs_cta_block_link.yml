@@ -1,0 +1,23 @@
+uuid: 22ea9cb8-bedb-4500-ad50-7526070469cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nrcs_call_to_action_block
+    - field.storage.block_content.field_nrcs_cta_block_link
+  module:
+    - link
+id: block_content.nrcs_call_to_action_block.field_nrcs_cta_block_link
+field_name: field_nrcs_cta_block_link
+entity_type: block_content
+bundle: nrcs_call_to_action_block
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

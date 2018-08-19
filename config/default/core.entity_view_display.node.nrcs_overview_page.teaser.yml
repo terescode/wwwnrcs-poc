@@ -1,0 +1,19 @@
+uuid: 125476c9-7e28-4d9c-8b28-08e53a55c35e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.nrcs_overview_page
+  module:
+    - user
+id: node.nrcs_overview_page.teaser
+targetEntityType: node
+bundle: nrcs_overview_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

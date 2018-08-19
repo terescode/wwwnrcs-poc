@@ -1,0 +1,18 @@
+uuid: eb9f9369-672f-4867-a032-426cb3411e97
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_navigation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.nrcs_navigation
+target_entity_type_id: taxonomy_term
+target_bundle: nrcs_navigation
+default_langcode: site_default
+language_alterable: false

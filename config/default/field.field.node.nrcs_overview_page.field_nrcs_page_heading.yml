@@ -1,0 +1,19 @@
+uuid: 25205b66-267f-4cd2-b80c-6d2a689bf070
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_page_heading
+    - node.type.nrcs_overview_page
+id: node.nrcs_overview_page.field_nrcs_page_heading
+field_name: field_nrcs_page_heading
+entity_type: node
+bundle: nrcs_overview_page
+label: 'Page Heading'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

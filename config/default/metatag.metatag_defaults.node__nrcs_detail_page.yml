@@ -1,0 +1,8 @@
+uuid: b4ccc899-3be9-4763-8b50-2256dbd1c7c0
+langcode: en
+status: true
+dependencies: {  }
+id: node__nrcs_detail_page
+label: 'Content: NRCS Detail Page'
+tags:
+  title: '[node:field_nrcs_page_title] | NRCS [node:field_nrcs_page_site:entity:name]'

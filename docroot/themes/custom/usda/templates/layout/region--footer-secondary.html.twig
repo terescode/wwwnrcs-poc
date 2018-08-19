@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+<div class="usa-footer-secondary_section">
+  <div class="usa-grid-full">
+    {{ content }}
+  </div>
+  <div class="usa-grid usda-footer-branding">
+    <div>
+      <div class="usa-logo">
+        <span href="/" title="Home" rel="home" class="usda-logo">
+          <img src="/{{ directory }}/img/usda-symbol.svg" alt="USDA Logo" class="usda-logo-img">
+        </span>
+        <a class="usda-logo-text" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" aria-label="U.S. Department of Agriculture Farmers Page" rel="home" id="anch_1">
+          {{ site_name }}
+          <div class="tagline">{{ site_slogan }}</div>
+        </a>
+  	  </div>
+    </div>
+    <div class="footer-social">
+      <div class="footer-social-set">
+        <a class="usa-link-twitter ext" href="https://twitter.com/farmersgov" target="_blank" id="anch_52" rel="nofollow"><span>USDA on Twitter</span><span class="ext"><span class="element-invisible"> </span></span></a>
+        <a class="usa-link-facebook ext" href="https://www.facebook.com/usda/" target="_blank" id="anch_53" rel="nofollow"><span>USDA on Facebook</span><span class="ext"><span class="element-invisible"> </span></span></a>
+      </div>
+      <div class="footer-social-set">
+        <a class="usa-link-instagram ext" href="https://www.instagram.com/usdagov/" target="_blank" id="anch_54" rel="nofollow"><span>USDA on Instagram</span><span class="ext"><span class="element-invisible"> </span></span></a>
+        <a class="usa-link-flickr ext" href="https://flickr.com/usdagov" rel="nofollow" target="_blank" id="anch_55"><span>USDA on Flickr</span><span class="ext"><span class="element-invisible"> </span></span></a>
+        <a class="usa-link-youtube ext" href="https://www.youtube.com/usda/" target="_blank" id="anch_56" rel="nofollow"><span>USDA on Youtube</span><span class="ext"><span class="element-invisible"> </span></span></a>
+      </div>
+    </div>
+  </div>
+</div>

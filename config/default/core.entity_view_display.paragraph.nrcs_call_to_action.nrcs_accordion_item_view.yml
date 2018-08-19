@@ -1,0 +1,48 @@
+uuid: 42aa4e6a-a17f-412a-b0f5-b0399a518336
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.nrcs_accordion_item_view
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_body
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_heading
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_image
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_link
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - link
+    - text
+id: paragraph.nrcs_call_to_action.nrcs_accordion_item_view
+targetEntityType: paragraph
+bundle: nrcs_call_to_action
+mode: nrcs_accordion_item_view
+content:
+  field_nrcs_cta_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_nrcs_cta_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nrcs_cta_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_nrcs_cta_image: true

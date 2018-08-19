@@ -1,0 +1,20 @@
+uuid: 69a27627-d3a0-4c45-b7ef-8ab3b9bcd6b5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - usda
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: usda_local_actions
+theme: usda
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

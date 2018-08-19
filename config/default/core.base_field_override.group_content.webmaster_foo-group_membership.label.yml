@@ -1,0 +1,18 @@
+uuid: 3a53c3da-c331-44f9-9f92-ef30ce153351
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.webmaster_foo-group_membership
+id: group_content.webmaster_foo-group_membership.label
+field_name: label
+entity_type: group_content
+bundle: webmaster_foo-group_membership
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,81 @@
+uuid: fa8757e8-f0d9-40d4-adb6-b5aa0e97bd0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nrcs_overview_page.field_nrcs_overview_components
+    - field.field.node.nrcs_overview_page.field_nrcs_overview_intro
+    - field.field.node.nrcs_overview_page.field_nrcs_page_banner_image
+    - field.field.node.nrcs_overview_page.field_nrcs_page_heading
+    - field.field.node.nrcs_overview_page.field_nrcs_page_metatags
+    - field.field.node.nrcs_overview_page.field_nrcs_page_path
+    - field.field.node.nrcs_overview_page.field_nrcs_page_site
+    - field.field.node.nrcs_overview_page.field_nrcs_page_title
+    - node.type.nrcs_overview_page
+  module:
+    - entity_reference_revisions
+    - image
+    - metatag
+    - text
+    - user
+id: node.nrcs_overview_page.default
+targetEntityType: node
+bundle: nrcs_overview_page
+mode: default
+content:
+  content_moderation_control:
+    weight: -20
+    region: content
+  field_nrcs_overview_components:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nrcs_overview_intro:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_nrcs_page_banner_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nrcs_page_heading:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nrcs_page_metatags:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_nrcs_page_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_nrcs_page_path: true
+  field_nrcs_page_site: true
+  langcode: true
+  links: true

@@ -1,0 +1,9 @@
+uuid: 23f9a02d-23e8-48a0-9b6e-0680e6bb025c
+langcode: en
+status: true
+dependencies: {  }
+id: nrcs_accordion
+label: 'NRCS Accordion'
+icon_uuid: null
+description: 'A template for creating accordion blocks on a page.'
+behavior_plugins: {  }

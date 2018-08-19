@@ -1,0 +1,18 @@
+uuid: ed9110a3-6669-402b-85b6-1e925a9954c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nrcs_sites
+id: taxonomy_term.nrcs_sites.name
+field_name: name
+entity_type: taxonomy_term
+bundle: nrcs_sites
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

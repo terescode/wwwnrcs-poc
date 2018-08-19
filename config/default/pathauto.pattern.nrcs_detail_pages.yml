@@ -1,0 +1,34 @@
+uuid: cc174ea1-ec2d-4a60-ab3b-01051e106119
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: nrcs_detail_pages
+label: 'NRCS Detail Pages'
+type: 'canonical_entities:node'
+pattern: 'nrcs/[node:field_nrcs_page_site:entity:field_nrcs_site_path_segment]/[node:nrcs_page_path]/[node:field_nrcs_page_url_component]'
+selection_criteria:
+  c38b067e-47af-4ed6-8d17-81c495f5186a:
+    id: node_type
+    bundles:
+      nrcs_detail_page: nrcs_detail_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c38b067e-47af-4ed6-8d17-81c495f5186a
+  8b39326a-6ab3-4024-9000-fa495abc9e71:
+    id: language
+    langcodes:
+      en: en
+      es: es
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 8b39326a-6ab3-4024-9000-fa495abc9e71
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

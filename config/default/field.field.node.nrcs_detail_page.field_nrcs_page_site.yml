@@ -1,0 +1,29 @@
+uuid: c49ba6c5-fe9c-4049-81ed-2ad63c323bb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_page_site
+    - node.type.nrcs_detail_page
+    - taxonomy.vocabulary.nrcs_sites
+id: node.nrcs_detail_page.field_nrcs_page_site
+field_name: field_nrcs_page_site
+entity_type: node
+bundle: nrcs_detail_page
+label: Site
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nrcs_sites: nrcs_sites
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

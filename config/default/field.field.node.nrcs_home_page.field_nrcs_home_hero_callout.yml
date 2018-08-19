@@ -1,0 +1,37 @@
+uuid: 55a8090e-05c0-4422-a875-cceacbad131f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nrcs_home_hero_callout
+    - node.type.nrcs_home_page
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - entity_reference_revisions
+id: node.nrcs_home_page.field_nrcs_home_hero_callout
+field_name: field_nrcs_home_hero_callout
+entity_type: node
+bundle: nrcs_home_page
+label: 'Hero Callout'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      nrcs_call_to_action: nrcs_call_to_action
+    target_bundles_drag_drop:
+      nrcs_accordion:
+        weight: 4
+        enabled: false
+      nrcs_call_to_action:
+        enabled: true
+        weight: 5
+      nrcs_content:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

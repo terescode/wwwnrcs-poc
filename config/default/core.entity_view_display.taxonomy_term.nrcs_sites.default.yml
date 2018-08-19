@@ -1,0 +1,31 @@
+uuid: c156df2d-a2d7-4957-87fb-c6254a409c58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nrcs_sites.field_nrcs_site_path_segment
+    - taxonomy.vocabulary.nrcs_sites
+  module:
+    - text
+id: taxonomy_term.nrcs_sites.default
+targetEntityType: taxonomy_term
+bundle: nrcs_sites
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nrcs_site_path_segment:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

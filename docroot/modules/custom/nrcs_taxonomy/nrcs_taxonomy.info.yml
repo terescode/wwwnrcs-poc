@@ -1,0 +1,7 @@
+name: NRCS Taxonomy
+type: module
+description: Provides taxonomy related functions for NRCS taxonomies.
+core: 8.x
+package: nrcs
+dependencies:
+  - nrcs_core

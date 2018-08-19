@@ -1,0 +1,25 @@
+uuid: 6b591140-4a6b-40fe-9e2d-8d5d2f068484
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - usda
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: usda_branding
+theme: usda
+region: header
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

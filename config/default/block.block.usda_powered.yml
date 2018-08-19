@@ -1,0 +1,22 @@
+uuid: 19034029-599b-41a1-b0df-298e5fe82465
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - usda
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: usda_powered
+theme: usda
+region: footer_primary
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: a217ad43-a2cd-4f5c-a029-aec4aa7699e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nrcs_call_to_action_block
+    - field.storage.block_content.field_nrcs_cta_block_body
+  module:
+    - text
+id: block_content.nrcs_call_to_action_block.field_nrcs_cta_block_body
+field_name: field_nrcs_cta_block_body
+entity_type: block_content
+bundle: nrcs_call_to_action_block
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

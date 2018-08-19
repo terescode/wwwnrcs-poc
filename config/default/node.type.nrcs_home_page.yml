@@ -1,0 +1,17 @@
+uuid: 549c172f-ee23-4645-9a7a-1772f3167239
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'NRCS Home Page'
+type: nrcs_home_page
+description: 'A template for creating NRCS home pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

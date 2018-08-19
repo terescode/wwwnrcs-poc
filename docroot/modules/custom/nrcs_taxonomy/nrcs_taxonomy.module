@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * NRCS Taxonomy module.
+ */
+
+use Drupal\Core\Render\BubbleableMetadata;
+
+/**
+ * Implements hook_token_info().
+ */
+function nrcs_taxonomy_token_info() {
+  return \Drupal::service('nrcs_taxonomy.taxonomy_path_token')
+    ->hookTokenInfo();
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function nrcs_taxonomy_tokens(
+  $type,
+  $tokens,
+  $data,
+  $options,
+  BubbleableMetadata $bubbleable_metadata
+) {
+  return \Drupal::service('nrcs_taxonomy.taxonomy_path_token')
+    ->hookTokens(
+      $type,
+      $tokens,
+      $data,
+      $options,
+      $bubbleable_metadata
+    );
+}

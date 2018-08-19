@@ -1,0 +1,22 @@
+uuid: 9c54828b-a197-46dd-8874-c976e3b07e13
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - usda
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: usda_help
+theme: usda
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

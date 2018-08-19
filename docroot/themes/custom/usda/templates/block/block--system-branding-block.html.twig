@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header" aria-label="{{ 'Official United States Government Website Disclaimer'|t }}">
+      <div class="usa-grid usa-banner-inner">
+      <img src="/{{ directory }}/img/favicons/flag-favicon-57.png" alt="{{ 'U.S. flag'|t }}">
+      <p>{{ 'An official website of the United States government'|t }}</p>
+      <button class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner">
+        <span class="usa-banner-button-text">{{ 'Here’s how you know'|t }}</span>
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner" aria-hidden="true">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="{{ directory }}/img/icon-dot-gov.svg" alt="{{ 'Dot gov'|t }}">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>{{ 'The .gov means it’s official.'|t }}'</strong>
+            <br>
+            {{ 'Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.'|t }}
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/themes/usda/img/icon-https.svg" alt="{{ 'SSL'|t }}">
+        <div class="usa-media_block-body">
+          <p>{{ 'This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government.
+            The <strong>https://</strong> means all transmitted data is encrypted &nbsp;— in other words, any information or browsing
+            history that you provide is transmitted securely.'|t }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="usa-banner">
+  <div class="usa-navbar">
+    <button class="usa-menu-btn">{{ 'Menu'|t }}</button>
+    <div class="usa-logo">
+      <span href="/" title="Home" rel="home" class="usda-logo">
+        <img src="/{{ directory }}/img/usda-symbol.svg" alt="{{ 'USDA Logo'|t }}" class="usda-logo-img">
+      </span>
+    	<a class="usda-logo-text" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" aria-label="{{ 'U.S. Department of Agriculture Farmers Page'|t }}" rel="home" id="anch_1">
+        {{ site_name }}
+        <div class="tagline">{{ site_slogan }}</div>
+      </a>
+  	</div>
+  </div>
+</div>

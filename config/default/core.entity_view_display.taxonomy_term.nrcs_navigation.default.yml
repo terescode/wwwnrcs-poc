@@ -1,0 +1,31 @@
+uuid: 74f2f51b-0564-4125-b075-d9b9816ffee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nrcs_navigation.field_nrcs_path_segment
+    - taxonomy.vocabulary.nrcs_navigation
+  module:
+    - text
+id: taxonomy_term.nrcs_navigation.default
+targetEntityType: taxonomy_term
+bundle: nrcs_navigation
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nrcs_path_segment:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

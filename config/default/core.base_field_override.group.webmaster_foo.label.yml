@@ -1,0 +1,18 @@
+uuid: c94aa1a2-61ab-4040-b097-ec9eab07987c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+id: group.webmaster_foo.label
+field_name: label
+entity_type: group
+bundle: webmaster_foo
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,64 @@
+uuid: 31f8112b-223d-4765-85da-fa1e08784e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_body
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_heading
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_image
+    - field.field.paragraph.nrcs_call_to_action.field_nrcs_cta_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - content_moderation
+    - image
+    - link
+    - text
+id: paragraph.nrcs_call_to_action.default
+targetEntityType: paragraph
+bundle: nrcs_call_to_action
+mode: default
+content:
+  field_nrcs_cta_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_nrcs_cta_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nrcs_cta_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_nrcs_cta_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  translation: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: 6e7f4941-1c6b-4a8e-bd84-884351106704
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.webmaster_foo-group_membership
+  module:
+    - path
+id: group_content.webmaster_foo-group_membership.path
+field_name: path
+entity_type: group_content
+bundle: webmaster_foo-group_membership
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

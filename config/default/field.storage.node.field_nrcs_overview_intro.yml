@@ -1,0 +1,19 @@
+uuid: 97b57e1f-6006-4f83-9be2-25f433712e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_nrcs_overview_intro
+field_name: field_nrcs_overview_intro
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

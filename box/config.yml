@@ -3,7 +3,7 @@ vagrant_hostname: local.wwwnrcs-poc.com
 vagrant_machine_name: wwwnrcs-poc
 
 # Set the IP address so it doesn't conflict with other Drupal VM instances.
-vagrant_ip: 192.168.126.137
+vagrant_ip: 192.168.168.232
 
 # Use Ubuntu 16.04 LTS to match Acquia Cloud environments.
 vagrant_box: geerlingguy/ubuntu1604

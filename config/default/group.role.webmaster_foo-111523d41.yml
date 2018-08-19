@@ -1,0 +1,17 @@
+uuid: a3b34154-0265-4268-8723-292b77058ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+  enforced:
+    config:
+      - user.role.content_editor
+id: webmaster_foo-111523d41
+label: 'Content Editor'
+weight: 3
+internal: true
+audience: outsider
+group_type: webmaster_foo
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,20 @@
+uuid: dfea161d-6df7-4658-a18d-bfa93641edbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+id: webmaster_foo-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: webmaster_foo
+permissions_ui: true
+permissions:
+  0: 'access group_node overview'
+  1: 'view group'
+  4: 'create group_node:overview entity'
+  5: 'update own group_node:overview entity'
+  6: 'view group_node:overview entity'
+  7: 'view unpublished group_node:overview entity'

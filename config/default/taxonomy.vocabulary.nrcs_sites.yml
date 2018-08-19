@@ -1,0 +1,9 @@
+uuid: 58cf4ead-d100-4899-b696-a6714a27b2fb
+langcode: en
+status: true
+dependencies: {  }
+name: 'NRCS Sites'
+vid: nrcs_sites
+description: 'NRCS Site Vocabulary'
+hierarchy: 0
+weight: 0

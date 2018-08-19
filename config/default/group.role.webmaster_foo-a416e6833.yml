@@ -1,0 +1,17 @@
+uuid: 1940207d-7407-4722-ae2a-af8ee48de9c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+  enforced:
+    config:
+      - user.role.administrator
+id: webmaster_foo-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: webmaster_foo
+permissions_ui: false
+permissions: {  }

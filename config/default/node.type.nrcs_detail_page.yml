@@ -1,0 +1,17 @@
+uuid: ea6b55b6-d56e-4696-85c8-3d82dc778bd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'NRCS Detail Page'
+type: nrcs_detail_page
+description: 'A page template for NRCS detail pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

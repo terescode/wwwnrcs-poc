@@ -1,0 +1,21 @@
+uuid: 6b69f698-33cc-4a14-91cb-23b9b1b66092
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_subsite
+    - group.type.webmaster_foo
+  module:
+    - options
+id: group.webmaster_foo.field_subsite
+field_name: field_subsite
+entity_type: group
+bundle: webmaster_foo
+label: Subsite
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

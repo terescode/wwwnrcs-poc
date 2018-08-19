@@ -1,0 +1,21 @@
+uuid: d3477556-f364-4f52-b360-e69b2fbfe6cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nrcs_cta_body
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+  module:
+    - text
+id: paragraph.nrcs_call_to_action.field_nrcs_cta_body
+field_name: field_nrcs_cta_body
+entity_type: paragraph
+bundle: nrcs_call_to_action
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

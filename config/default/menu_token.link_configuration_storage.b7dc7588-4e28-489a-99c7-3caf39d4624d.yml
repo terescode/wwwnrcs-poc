@@ -1,0 +1,8 @@
+uuid: 3b654697-21b8-4a76-bd34-5acc676b18f8
+langcode: en
+status: true
+dependencies: {  }
+id: b7dc7588-4e28-489a-99c7-3caf39d4624d
+label: 'Menu token link configuration'
+linkid: 'internal:/nrcs/[node:field_nrcs_page_site:entity:field_nrcs_site_path_segment]/topics'
+configurationSerialized: 'a:4:{s:18:"menu_token_enabled";i:1;s:36:"remove_if_replacement_is_not_present";i:1;s:4:"node";a:2:{i:0;s:7:"context";i:1;i:0;}s:4:"user";a:2:{i:0;s:4:"none";i:1;i:0;}}'

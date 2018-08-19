@@ -1,0 +1,20 @@
+uuid: dfffac9a-ac6d-4371-a189-142d161f3437
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.webmaster_foo
+  module:
+    - path
+id: group.webmaster_foo.path
+field_name: path
+entity_type: group
+bundle: webmaster_foo
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

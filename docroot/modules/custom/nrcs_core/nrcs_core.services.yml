@@ -1,0 +1,8 @@
+services:
+  nrcs_core.path_helper:
+    class: Drupal\nrcs_core\NrcsPathHelper
+    arguments: ['@entity_type.manager', '@current_route_match', '@path.alias_manager', '@language_manager']
+
+  nrcs_core.theme_helper:
+    class: Drupal\nrcs_core\NrcsThemeHelper
+    arguments: ['@config.factory', '@entity_type.manager', '@nrcs_core.path_helper']

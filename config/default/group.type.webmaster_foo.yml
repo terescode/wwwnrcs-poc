@@ -1,0 +1,10 @@
+uuid: dc1c6f0d-474d-4c7c-a060-be5a57af94f4
+langcode: en
+status: true
+dependencies: {  }
+id: webmaster_foo
+label: 'Web Masters'
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

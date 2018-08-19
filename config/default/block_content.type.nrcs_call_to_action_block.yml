@@ -1,0 +1,8 @@
+uuid: 7ea4d21b-e726-4eb8-8264-499bc22024cd
+langcode: en
+status: true
+dependencies: {  }
+id: nrcs_call_to_action_block
+label: 'NRCS Call-to-action Block'
+revision: 1
+description: 'A call-to-action block template for NRCS pages.'

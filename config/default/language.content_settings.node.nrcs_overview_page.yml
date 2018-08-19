@@ -1,0 +1,18 @@
+uuid: d7e26d2e-1b6b-455a-9719-01310d23dd0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nrcs_overview_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.nrcs_overview_page
+target_entity_type_id: node
+target_bundle: nrcs_overview_page
+default_langcode: site_default
+language_alterable: true
