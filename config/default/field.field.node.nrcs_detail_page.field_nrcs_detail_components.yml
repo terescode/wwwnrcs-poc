@@ -13,7 +13,7 @@ entity_type: node
 bundle: nrcs_detail_page
 label: 'Page Components'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -21,15 +21,15 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: {  }
+    target_bundles: null
     target_bundles_drag_drop:
-      accordion:
-        enabled: true
+      nrcs_accordion:
         weight: 4
-      block:
-        enabled: true
+        enabled: false
+      nrcs_call_to_action:
         weight: 5
-      content:
-        enabled: true
+        enabled: false
+      nrcs_content:
         weight: 6
+        enabled: false
 field_type: entity_reference_revisions
