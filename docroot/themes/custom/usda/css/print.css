@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+body {
+  background: $color-white;
+  color: $color-black;
+}
+
+@page {
+  margin: 2cm;
+}
+
+.usa-grid {
+  padding: 0 2rem;
+}
+
+.usa-logo {
+  margin-left: 2rem;
+}
+
+img {
+  page-break-inside: avoid;
+}
+
+article a:visited {
+ color: $color-primary; 
+}
+
+.usda-page-title {
+  color: $color-black;
+}
+
+.usa-banner-header,
+.usa-header > .usa-banner:first-child,
+.usa-menu-btn,
+.tabs,
+.usa-hero,
+.usda-breadcrumb,
+.addthis_inline_share_toolbox,
+.usa-layout-docs-sidenav,
+.comment-form,
+#write-blog-response,
+#block-views-block-blog-posts-blog-posts-you-may-like,
+.agency-reports-filter,
+.usa-footer {
+  display: none;
+}
+
+.usa-content p:not(.usa-font-lead) {
+  max-width: 100%;
+}
+
+.usda-page-title-with-hero {
+  position: inherit;
+  color: $color-black;
+  padding-left: 0;
+  background: none;
+  margin-top: 2.8rem;
+}
+
+.usda-page-title-block-with-hero {
+  position: inherit;
+}
+
+.usa-layout-docs-main_content {
+  display: block;
+  width: 100%;
+}
+
+.usda-paragraph-column:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.embedded-entity[data-align="left"],
+.embedded-entity.align-left {
+  @include embedded-entity(left);
+}
+
+.embedded-entity[data-align="right"],
+.embedded-entity.align-right {
+  @include embedded-entity(right);
+}
+
+.news-release-info {
+  border: 1px solid $color-black;
+}
+
+.agency-report-date {
+  @include span-columns(2);
+  padding-left: 1rem;
+}
+
+.agency-report-title {
+  @include span-columns(8);
+}
+
+.agency-report-agency {
+  @include span-columns(2);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.usda-agency-report-legend {
+  border: 1px solid $color-black;
+}
+
+.usda-section-image-content-wrapper {
+  margin-top: 1.76471em;
+  margin-bottom: 1.76471em;
+  display: table;
+  width: 100%;
+}
+
+.usda-section-image-wrapper {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 2rem;
+
+  > img {
+    min-width: 80px;
+  }
+}
+
+.usda-section-content {
+  display: table-cell;
+  vertical-align: top;
+}
+*/
+
+/*# sourceMappingURL=print.css.map */
