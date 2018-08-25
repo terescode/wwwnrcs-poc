@@ -17,52 +17,62 @@ type_settings:
   states:
     archived:
       label: Archived
-      weight: 5
+      weight: 1
       published: false
       default_revision: true
     draft:
       label: Draft
       published: false
       default_revision: false
-      weight: -5
+      weight: -2
     published:
       label: Published
       published: true
       default_revision: true
       weight: 0
+    review:
+      published: false
+      default_revision: false
+      label: Review
+      weight: -1
   transitions:
     archive:
       label: Archive
       from:
         - published
       to: archived
-      weight: 2
+      weight: 1
     archived_draft:
       label: 'Restore to Draft'
       from:
         - archived
       to: draft
-      weight: 3
-    archived_published:
-      label: Restore
-      from:
-        - archived
-      to: published
-      weight: 4
+      weight: 2
     create_new_draft:
       label: 'Create New Draft'
       to: draft
-      weight: 0
+      weight: -3
       from:
         - draft
         - published
     publish:
       label: Publish
       to: published
-      weight: 1
+      weight: 0
+      from:
+        - review
+    return_to_editor:
+      label: 'Return to Editor'
+      from:
+        - review
+      to: draft
+      weight: -1
+    review:
+      label: Review
       from:
         - draft
-        - published
+      to: review
+      weight: -2
   entity_types:
     node:
       - nrcs_detail_page
