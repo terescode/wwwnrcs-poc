@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a41e97bd28dd3bdceeb4fab35c9ee39a",
+    "content-hash": "b3791e98c3ce60a965ea62ff7c75acf6",
     "packages": [
         {
             "name": "acquia/blt",
@@ -287,7 +287,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -1150,6 +1150,154 @@
             "time": "2017-01-20T21:14:22+00:00"
         },
         {
+            "name": "dkd/enumeration",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dkd/enumeration.git",
+                "reference": "b8b47b4616948b122d9fecfe2d3969cbfda230e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dkd/enumeration/zipball/b8b47b4616948b122d9fecfe2d3969cbfda230e0",
+                "reference": "b8b47b4616948b122d9fecfe2d3969cbfda230e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.1",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dkd\\Enumeration\\": "src",
+                    "Dkd\\Enumeration\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Egerer",
+                    "email": "sascha.egerer@dkd.de",
+                    "homepage": "http://www.dkd.de/"
+                }
+            ],
+            "description": "An enumeration implementation for PHP.",
+            "homepage": "https://github.com/dkd/enumeration",
+            "keywords": [
+                "enum",
+                "enumeration",
+                "type"
+            ],
+            "time": "2014-08-28T06:00:06+00:00"
+        },
+        {
+            "name": "dkd/php-cmis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dkd/php-cmis-client.git",
+                "reference": "09967e356d934bcdb09ce517659b99391e57dba6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dkd/php-cmis-client/zipball/09967e356d934bcdb09ce517659b99391e57dba6",
+                "reference": "09967e356d934bcdb09ce517659b99391e57dba6",
+                "shasum": ""
+            },
+            "require": {
+                "dkd/enumeration": "~0.1",
+                "dkd/php-populate": "^1",
+                "doctrine/cache": "^1",
+                "guzzlehttp/guzzle": "^6",
+                "guzzlehttp/streams": "^3",
+                "league/url": "^2|^3",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "~2.1",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dkd\\PhpCmis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Egerer",
+                    "email": "sascha.egerer@dkd.de",
+                    "homepage": "http://www.dkd.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP CMIS client library based on CMIS 1.1",
+            "homepage": "https://phabricator.dkd.de/diffusion/PHPCMIS/",
+            "keywords": [
+                "cmis"
+            ],
+            "time": "2017-11-20T13:26:50+00:00"
+        },
+        {
+            "name": "dkd/php-populate",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dkd/php-populate.git",
+                "reference": "db8e84f1a9263176c07313a5a3e82a4dc051760c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dkd/php-populate/zipball/db8e84f1a9263176c07313a5a3e82a4dc051760c",
+                "reference": "db8e84f1a9263176c07313a5a3e82a4dc051760c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dkd\\Populate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Claus Due",
+                    "email": "info@dkd.de"
+                }
+            ],
+            "description": "Trait for PHP classes, allowing properties to be populated from sources like JSON, via getters but using a single method",
+            "keywords": [
+                "json",
+                "php",
+                "trait"
+            ],
+            "time": "2015-03-06T16:48:57+00:00"
+        },
+        {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
@@ -2005,6 +2153,37 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/adminimal_theme"
             }
+        },
+        {
+            "name": "drupal/cmis",
+            "version": "dev-8.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/cmis.git",
+                "reference": "6afa16fe54bbd3042f9f56ab1dea6cf55ac47889"
+            },
+            "require": {
+                "dkd/php-cmis": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "patches_applied": {
+                    "Remove checkClient() and fix getContentStream() call": "patches/remove-check-client-fix-get-content-stream-2608214-23.patch"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "CMIS implementation for interacting with a CMIS compliant repository",
+            "homepage": "https://www.drupal.org/project/cmis",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "http://drupal.org/project/issues/cmis",
+                "source": "http://cgit.drupalcode.org/cmis"
+            },
+            "time": "2017-03-26T08:20:32+00:00"
         },
         {
             "name": "drupal/coder",
@@ -7149,6 +7328,56 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "guzzlehttp/streams",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "reference": "47aaa48e27dae43d39fc1cea0ccf0d84ac1a2ba5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-10-12T19:18:40+00:00"
+        },
+        {
             "name": "j7mbo/twitter-api-php",
             "version": "1.0.6",
             "source": {
@@ -7525,6 +7754,61 @@
                 "server"
             ],
             "time": "2017-12-23T23:33:42+00:00"
+        },
+        {
+            "name": "league/url",
+            "version": "3.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/url.git",
+                "reference": "1ae2c3ce29a7c5438339ff6388225844e6479da8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/url/zipball/1ae2c3ce29a7c5438339ff6388225844e6479da8",
+                "reference": "1ae2c3ce29a7c5438339ff6388225844e6479da8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0",
+                "true/punycode": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Url\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "League/url is a lightweight PHP Url manipulating library",
+            "homepage": "http://url.thephpleague.com",
+            "keywords": [
+                "parse_url",
+                "php",
+                "url"
+            ],
+            "abandoned": "league/uri",
+            "time": "2015-07-15T08:24:12+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -10874,6 +11158,52 @@
             "time": "2017-10-21T03:33:59+00:00"
         },
         {
+            "name": "true/punycode",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/true/php-punycode.git",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TrueBV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Renan Gonçalves",
+                    "email": "renan.saddam@gmail.com"
+                }
+            ],
+            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+            "homepage": "https://github.com/true/php-punycode",
+            "keywords": [
+                "idna",
+                "punycode"
+            ],
+            "time": "2016-11-16T10:37:54+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.35.3",
             "source": {
@@ -13097,6 +13427,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/cmis": 20,
         "drupal/cshs": 10,
         "drupal/group": 5,
         "drupal/menu_token": 15,
