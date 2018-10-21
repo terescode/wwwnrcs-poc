@@ -1,0 +1,6 @@
+cmis_ckeditor_link.link_dialog:
+  path: '/cmis_ckeditor_link/dialog/link/{editor}'
+  defaults:
+    _controller: '\Drupal\cmis_ckeditor_link\Controller\CmisLinkDialogController::ajaxContent'
+  requirements:
+    _permission: 'access cmis browser'

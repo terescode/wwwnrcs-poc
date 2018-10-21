@@ -1,0 +1,8 @@
+name: CMIS CKEditor Link
+type: module
+description: Provides a CKEditor button to insert CMIS links via the cmis browser.
+core: 8.x
+package: cmis
+dependencies:
+  - ckeditor
+  - cmis

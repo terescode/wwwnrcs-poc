@@ -1,0 +1,111 @@
+diff --git a/src/CmisBrowser.php b/src/CmisBrowser.php
+index 6aa4547..f60f827 100644
+--- a/src/CmisBrowser.php
++++ b/src/CmisBrowser.php
+@@ -67,7 +67,7 @@ class CmisBrowser {
+    * Popup.
+    *
+    * @var boolean
+-   *    the browser popup flag 
++   *    the browser popup flag
+    */
+   protected $popup;
+ 
+@@ -120,7 +120,7 @@ class CmisBrowser {
+         $this->current->getBaseTypeId()->__toString() == 'cmis:document') {
+       $id = $this->current->getId();
+       try {
+-        $content = $this->current->getContentStream($id);
++        $content = $this->current->getContentStream();
+       }
+       catch (CMISException $e) {
+         // TODO: testing this.
+@@ -146,7 +146,7 @@ class CmisBrowser {
+ 
+   /**
+    * Get document properties.
+-   * 
++   *
+    * @return array
+    *    the renderable array
+    */
+@@ -202,7 +202,7 @@ class CmisBrowser {
+ 
+   /**
+    * Get current object.
+-   * 
++   *
+    * @return object
+    */
+   public function getCurrent() {
+@@ -229,7 +229,7 @@ class CmisBrowser {
+ 
+   /**
+    * Browse.
+-   * 
++   *
+    * @return array
+    *   Return cmis browser render array.
+    */
+@@ -317,7 +317,7 @@ class CmisBrowser {
+ 
+   /**
+    * Add folder objects to render array.
+-   * 
++   *
+    * @param \Dkd\PhpCmis\Data\FolderInterface $folder
+    */
+   protected function printFolderContent(\Dkd\PhpCmis\Data\FolderInterface $folder) {
+diff --git a/src/CmisConnectionApi.php b/src/CmisConnectionApi.php
+index bbbdbef..9ba304b 100644
+--- a/src/CmisConnectionApi.php
++++ b/src/CmisConnectionApi.php
+@@ -34,7 +34,7 @@ class CmisConnectionApi {
+    * Parameters
+    *
+    * @var array
+-   *    the parameters for connection type 
++   *    the parameters for connection type
+    */
+   private $parameters;
+ 
+@@ -66,39 +66,10 @@ class CmisConnectionApi {
+    * {@inheritdoc}
+    */
+   public function __construct($config = '') {
+-    $this->checkClient();
+     $this->setConfig($config);
+   }
+ 
+   /**
+-   * Check if cmis exists in drupal root vendor.
+-   * 
+-   * The module use php-cmis-client library but the current version 1.0
+-   * depend the guzzle 5 version. Drupal use the guzzle 6 version.
+-   * In order to we able using this client we need install it to module vendor
+-   * folder.
+-   *
+-   * To install temporary to time when will ready new version of cmis client
+-   * you need to go to cmis module root folder (eg. modules/cmis or 
+-   * modules/contrib/cmis) and call the next command:
+-   *    composer require dkd/php-cmis
+-   */
+-  public function checkClient() {
+-    // If not exists load it from cmis module vendor folder.
+-    if (!class_exists('BindingType')) {
+-      // Load CMIS using classes if composer not able to install them
+-      // to root vendor folder because guzzle 5 dependency.
+-      $path = drupal_get_path('module', 'cmis');
+-      if (file_exists($path . '/vendor/autoload.php')) {
+-        require_once($path . '/vendor/autoload.php');
+-      }
+-      else {
+-        throw new \Exception('Php CMIS Client library is not properly installed.');
+-      }
+-    }
+-  }
+-
+-  /**
+    * Set the configuration fom configuration id.
+    *
+    * @param string $config_id
