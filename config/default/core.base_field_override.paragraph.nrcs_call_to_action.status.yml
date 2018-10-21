@@ -1,0 +1,22 @@
+uuid: b4a5881c-8c93-4cd3-b454-c1b0ada3d229
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+id: paragraph.nrcs_call_to_action.status
+field_name: status
+entity_type: paragraph
+bundle: nrcs_call_to_action
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

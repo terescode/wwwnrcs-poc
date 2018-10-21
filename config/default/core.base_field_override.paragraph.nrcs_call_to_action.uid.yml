@@ -1,0 +1,20 @@
+uuid: 74d9dd8d-e47a-47b0-affc-943f2e328625
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_call_to_action
+id: paragraph.nrcs_call_to_action.uid
+field_name: uid
+entity_type: paragraph
+bundle: nrcs_call_to_action
+label: 'Authored by'
+description: 'The user ID of the paragraphs author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

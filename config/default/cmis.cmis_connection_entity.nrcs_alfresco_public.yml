@@ -1,0 +1,11 @@
+uuid: c08c388a-43f1-4411-8838-baabecf6cfc6
+langcode: en
+status: true
+dependencies: {  }
+id: nrcs_alfresco_public
+label: 'Alfresco Public'
+cmis_url: 'https://cmis.alfresco.com/alfresco/api/-default-/public/cmis/versions/1.1/browser'
+cmis_user: admin
+cmis_password: admin
+cmis_repository: '-default-'
+cmis_cacheable: false

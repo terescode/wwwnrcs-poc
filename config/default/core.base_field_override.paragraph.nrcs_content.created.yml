@@ -1,0 +1,18 @@
+uuid: cc124a9c-f8e8-4637-a460-172ebafe5968
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_content
+id: paragraph.nrcs_content.created
+field_name: created
+entity_type: paragraph
+bundle: nrcs_content
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: 7a0de9c2-fb6c-49a0-8b39-6e6dfd12019d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_content
+id: paragraph.nrcs_content.moderation_state
+field_name: moderation_state
+entity_type: paragraph
+bundle: nrcs_content
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
