@@ -1,0 +1,22 @@
+uuid: 513bb276-d7e1-4536-ad43-402010979784
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.nrcs_accordion
+id: paragraph.nrcs_accordion.status
+field_name: status
+entity_type: paragraph
+bundle: nrcs_accordion
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

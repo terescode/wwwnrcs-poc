@@ -57,8 +57,12 @@ content:
     settings: {  }
     region: content
     third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
-  translation: true
   uid: true

@@ -29,6 +29,7 @@ settings:
           items:
             - DrupalLink
             - DrupalUnlink
+            - CmisLink
         -
           name: Lists
           items:
