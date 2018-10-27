@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 id: nrcs_alfresco_public
 label: 'Alfresco Public'
-cmis_url: 'https://cmis.alfresco.com/alfresco/api/-default-/public/cmis/versions/1.1/browser'
-cmis_user: admin
-cmis_password: admin
-cmis_repository: '-default-'
+cmis_url: 'http://ec2-52-222-82-79.us-gov-west-1.compute.amazonaws.com:9080/openfncmis/browser'
+cmis_user: p8admin
+cmis_password: Tspdms88
+cmis_repository: DESIGN
 cmis_cacheable: false
