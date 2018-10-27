@@ -81,6 +81,9 @@
             },
             "drupal/cmis": {
                 "Remove checkClient() and fix getContentStream() call": "patches/remove-check-client-fix-get-content-stream-2608214-23.patch"
+            },
+            "dkd/php-cmis": {
+                "Ignore extension properties when parsing definition": "patches/dkd-phpcmis-0067.patch"
             }
         }
     },

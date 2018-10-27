@@ -1,0 +1,86 @@
+diff --git a/src/Converter/JsonConverter.php b/src/Converter/JsonConverter.php
+index bc63743..d8f3b10 100644
+--- a/src/Converter/JsonConverter.php
++++ b/src/Converter/JsonConverter.php
+@@ -676,7 +676,7 @@ class JsonConverter extends AbstractDataConverter
+ //        }
+ 
+         $propertyDefinition->populate(
+-            $data,
++            array_intersect_key($data, array_fill_keys(JSONConstants::getPropertyTypeKeys(), 1)),
+             [JSONConstants::JSON_PROPERTY_TYPE_RESOLUTION => 'dateTimeResolution']
+         );
+         $propertyDefinition->setExtensions($this->convertExtension($data, JSONConstants::getPropertyTypeKeys()));
+diff --git a/tests/Fixtures/Cmis/v1.1/BrowserBinding/getTypeDefinitionHidden-response.log b/tests/Fixtures/Cmis/v1.1/BrowserBinding/getTypeDefinitionHidden-response.log
+new file mode 100644
+index 0000000..c8a40d9
+--- /dev/null
++++ b/tests/Fixtures/Cmis/v1.1/BrowserBinding/getTypeDefinitionHidden-response.log
+@@ -0,0 +1,35 @@
++{
++    "fulltextIndexed":false,
++    "localName":"cmis:folder",
++    "fileable":true,
++    "includedInSupertypeQuery":true,
++    "queryName":"cmis:folder",
++    "controllablePolicy":false,
++    "creatable":true,
++    "id":"cmis:folder",
++    "propertyDefinitions":{
++        "cmis:id":{
++            "localName":"cmis:idValue",
++            "queryName":"cmis:idValue",
++            "inherited":false,
++            "openChoice":false,
++            "id":"cmis:id",
++            "orderable":true,
++            "propertyType":"id",
++            "description":"This is a id property.",
++            "updatability":"readonly",
++            "localNamespace":"local",
++            "displayName":"Id property",
++            "required":true,
++            "cardinality":"single",
++            "queryable":true,
++            "isHidden": true
++        }
++    },
++    "controllableACL":true,
++    "description":"Description of CMIS Folder Type",
++    "localNamespace":"local",
++    "displayName":"CMIS Folder",
++    "baseId":"cmis:folder",
++    "queryable":false
++}
+diff --git a/tests/Unit/Converter/JsonConverterTest.php b/tests/Unit/Converter/JsonConverterTest.php
+index 2b674e0..8d1a058 100644
+--- a/tests/Unit/Converter/JsonConverterTest.php
++++ b/tests/Unit/Converter/JsonConverterTest.php
+@@ -1190,4 +1190,27 @@ class JsonConverterTest extends \PHPUnit_Framework_TestCase
+ 
+         return $data;
+     }
++
++    public function testConvertPropertyDefinitionIgnoresUnrecognizedProperty()
++    {
++      $propertyDefinitions = $this->getResponseFixtureContentAsArray(
++          'Cmis/v1.1/BrowserBinding/getTypeDefinitionHidden-response.log'
++      )['propertyDefinitions'];
++      $expectedObjects = require(__DIR__ . '/../../Fixtures/Php/PropertyDefinitionsFixture.php');
++
++      $extensions = [new CmisExtensionElement(
++          null,
++          'isHidden',
++          [],
++          true
++      )];
++      $expectedObjects['cmis:id']->setExtensions($extensions);
++
++      $this->assertEquals(
++        $expectedObjects['cmis:id'],
++        $this->jsonConverter->convertPropertyDefinition(
++          $propertyDefinitions['cmis:id']
++        )
++      );
++    }
+ }
